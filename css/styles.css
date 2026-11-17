@@ -397,7 +397,96 @@ td {
     font-weight: 700;
 }
 
+.session-panel {
+    max-width: 1100px;
+    margin: 50px auto 0;
+    padding: 25px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.session-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.session-heading > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.session-indicator {
+    width: 9px;
+    height: 9px;
+    background: #20b879;
+    border-radius: 50%;
+}
+
+.session-caption {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.session-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.session-stat {
+    background: #f8f8fc;
+    padding: 18px;
+    border-radius: 9px;
+}
+
+.session-stat span {
+    display: block;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.session-stat strong {
+    color: var(--primary);
+    font-size: 19px;
+}
+
+.session-note {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.btn-secondary {
+    margin-left: 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn-secondary:hover {
+    background: rgba(255,255,255,0.15);
+}
+
 @media (max-width: 600px) {
+    /* Panel de sesión */
+    .session-panel {
+        margin: 30px 15px 0;
+        padding: 20px;
+    }
+
+    .session-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    /* Página principal */
     .welcome {
         padding: 30px 23px;
     }
@@ -406,6 +495,7 @@ td {
         font-size: 26px;
     }
 
+    /* Encabezado y menú */
     .header-content {
         padding: 18px;
     }

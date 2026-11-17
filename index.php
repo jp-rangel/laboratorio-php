@@ -20,6 +20,10 @@ include("includes/menu.php");
         <a href="variables.php" class="btn">
             Comenzar aprendizaje →
         </a>
+
+        <a href="index.php?reiniciar=1" class="btn btn-secondary">
+            Reiniciar sesión ↻
+        </a>
     </section>
 
     <section class="section">
